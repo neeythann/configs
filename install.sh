@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "Intaller script by neeythann\n"
+echo -e "Installer script by neeythann\n"
 
 # Check if script is run by root
 if [ $EUID -ne 0 ]; then
@@ -11,7 +11,7 @@ clear
 
 for i in {10..1}
 do
-	echo "This script will instal most tools and configurations that I use"
+	echo "This script will install most tools and configurations that I use"
 	echo "Press control + C to cancel this script"
 	echo
 	echo "installing in $i"
@@ -49,12 +49,8 @@ mkdir ~/virtenv
 #source virt2.7/bin/activate
 #virt2.7/pip install somethinghere
 
-echo "installing Tmux Plugin Manager"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-echo "installing powerlevel10k"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 echo "installing configurations"
 echo "old configurations are located at ~/old_config"
@@ -70,5 +66,6 @@ cp .conf/tmux.conf ~/.tmux.conf
 cp .conf/zshrc ~/.zshrc
 cp .conf/bashrc ~/.bashrc
 
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 echo "Done! Don't forget to update your Tmux panel and your p10k zsh shell"
 exit 0
