@@ -60,7 +60,7 @@ echo "installing configurations"
 echo "old configurations are located at ~/old_config"
 
 #move conf files to directory
-mkdir ~/old_config
+mkdir ~/.old_config
 mv .tmux.conf ~/.old_config/.tmux.conf
 mv .bashrc ~/.old_config/.bashrc
 mv .zshrc ~/.old_config/.zshrc
