@@ -38,12 +38,16 @@ apt-get install -y speedtest-cli;
 apt-get install -y net-tools;
 apt-get install -y openvpn;
 apt-get install -y zsh;
+apt-get install -y gdb;
 
 echo -e "installing pip2 and pip3";
 
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2
 curl https://bootstrap.pypa.io/pip/get-pip.py | python3
 '
+
+git clone https://github.com/longld/peda.git ~/peda
+echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 pip3 install virtualenv
 mkdir ~/virtenv
