@@ -39,6 +39,7 @@ apt-get install -y net-tools;
 apt-get install -y openvpn;
 apt-get install -y zsh;
 apt-get install -y gdb;
+apt-get install -y make;
 
 echo -e "installing pip2 and pip3";
 
