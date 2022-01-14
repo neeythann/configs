@@ -21,6 +21,7 @@ done
 
 # install the following as root user:
 echo "Please enter your password";
+clear;
 sudo -- sh -c '
 
 echo "installing dependencies";
