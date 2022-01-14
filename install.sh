@@ -41,7 +41,7 @@ apt-get install -y openvpn;
 apt-get install -y zsh;
 apt-get install -y gdb;
 apt-get install -y make;
-apt-get instal -y aria2;
+apt-get install -y aria2;
 
 echo -e "installing pip2 and pip3";
 
